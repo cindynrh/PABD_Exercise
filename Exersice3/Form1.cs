@@ -43,5 +43,11 @@ namespace Exersice3
             new Form3().Show();
             this.Hide();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+           
+
+        }
     }
 }

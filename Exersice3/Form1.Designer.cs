@@ -32,6 +32,7 @@ namespace Exersice3
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.barangTableAdapter = new Exersice3.JS_SteakDataSetTableAdapters.BarangTableAdapter();
             this.SuspendLayout();
             // 
             // label1
@@ -64,6 +65,10 @@ namespace Exersice3
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // barangTableAdapter
+            // 
+            this.barangTableAdapter.ClearBeforeFill = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -75,6 +80,7 @@ namespace Exersice3
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -85,6 +91,7 @@ namespace Exersice3
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private JS_SteakDataSetTableAdapters.BarangTableAdapter barangTableAdapter;
     }
 }
 
